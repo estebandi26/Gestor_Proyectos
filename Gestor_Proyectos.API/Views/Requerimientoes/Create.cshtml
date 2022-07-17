@@ -1,0 +1,108 @@
+﻿@model Gestor_Proyectos.API.Data.Entities.Requerimiento
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Requerimiento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Fecha_Reg" class="control-label"></label>
+                <input asp-for="Fecha_Reg" class="form-control" />
+                <span asp-validation-for="Fecha_Reg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre_Iniciativa" class="control-label"></label>
+                <input asp-for="Nombre_Iniciativa" class="form-control" />
+                <span asp-validation-for="Nombre_Iniciativa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Detalle_Req" class="control-label"></label>
+                <input asp-for="Detalle_Req" class="form-control" />
+                <span asp-validation-for="Detalle_Req" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aplicativo" class="control-label"></label>
+                <input asp-for="Aplicativo" class="form-control" />
+                <span asp-validation-for="Aplicativo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sustentac_Req" class="control-label"></label>
+                <input asp-for="Sustentac_Req" class="form-control" />
+                <span asp-validation-for="Sustentac_Req" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Objetivo1" class="control-label"></label>
+                <input asp-for="Objetivo1" class="form-control" />
+                <span asp-validation-for="Objetivo1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Objetivo2" class="control-label"></label>
+                <input asp-for="Objetivo2" class="form-control" />
+                <span asp-validation-for="Objetivo2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Objetivo3" class="control-label"></label>
+                <input asp-for="Objetivo3" class="form-control" />
+                <span asp-validation-for="Objetivo3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Indicador1" class="control-label"></label>
+                <input asp-for="Indicador1" class="form-control" />
+                <span asp-validation-for="Indicador1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Indicador2" class="control-label"></label>
+                <input asp-for="Indicador2" class="form-control" />
+                <span asp-validation-for="Indicador2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Indicador3" class="control-label"></label>
+                <input asp-for="Indicador3" class="form-control" />
+                <span asp-validation-for="Indicador3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Eviden_Mejora" class="control-label"></label>
+                <input asp-for="Eviden_Mejora" class="form-control" />
+                <span asp-validation-for="Eviden_Mejora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Periodo_Ent" class="control-label"></label>
+                <input asp-for="Periodo_Ent" class="form-control" />
+                <span asp-validation-for="Periodo_Ent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fecha_Entrega" class="control-label"></label>
+                <input asp-for="Fecha_Entrega" class="form-control" />
+                <span asp-validation-for="Fecha_Entrega" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ppto_Aprox" class="control-label"></label>
+                <input asp-for="Ppto_Aprox" class="form-control" />
+                <span asp-validation-for="Ppto_Aprox" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ppto_Area" class="control-label"></label>
+                <input asp-for="Ppto_Area" class="form-control" />
+                <span asp-validation-for="Ppto_Area" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
